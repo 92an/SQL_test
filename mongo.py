@@ -46,7 +46,7 @@ coll = conn[DATABASE][COLLECTION]
 
 coll.insert_many(new_docs) """
 
-documents = coll.find({"first": "douglas"})
+documents = coll.find()
 
 for doc in documents:
     print(doc)
